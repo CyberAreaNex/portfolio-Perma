@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <title>Arduino</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .content {
+                flex-direction: row;
+                gap: 30px;
+            }
+
+            .content > div {
+                flex: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Découverte d'Arduino</h1>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Arduino c'est quoi ?</h2>
+            <p>Tirant son nom d'un bar en Italie (oui cela m'a aussi étonné), Arduino est une platforme permettant de créer des objets techniques . La carte vendu par l'entreprise a un microcontroleur programmale et surtout d'un logiciel de développement fourni avec (IDE) qui permet de coder facilement sans passer par 10 000 logiciels comme cela pourrait l'etre avec d'autres microcontroleur</p>
+            <img src="arduino.png" alt="Logo Arduino">
+        </section>
+
+        <section>
+            <h2>Le Logiciel Arduino</h2>
+            <p>Le logiciel Arduino, également appelé l'IDE (Integrated Development Environment), est ce qui est utilisé pour programme les carte . Le langage utilisé c'est le C/C++, et le logiciel permet de tranférer les codes de façon simples avec juste une connexion en USB</p>
+            <img src="IDE-Arduino-V2-1.png" alt="Interface Arduino IDE">
+        </section>
+
+        <section>
+            <h2>Pourquoi cela m'intéresse ?</h2>
+            <p>Arduino m'intéresse car c'est un moyen de faire des système numérique de façon simple et accessible. <br>Cela m'apprend également le codage C++ de façn plutot simple et intuitive </p>
+        </section>
+
+        <section>
+            <h2>Les Interruptions en Arduino</h2>
+            <p>les interruptions sont un bout de code qui permet d'arreter pour un petit moment l'exécution du programme principal pour en lancer un autre. C'est utile parce que ça permet de gagner de l'espace dans le code et surtout de l'optimiser. Comment ? Car cela permet de ne pas vérifier tout le temps l'état d'un capteur / interrupteur, ce qui "décharge" la carte Arduino</p>
+            <img src="attachinterrupt.png" alt="Exemple d'interruption sur Arduino">
+            <p>Ci-dessous , voici un exemple d'un code simple permettant que, quand on appuie sur un bouton, les feux de signalisations passent au rouge et les led passent  au vert(simulation d'un croisement routier)</p>
+            <img src="exemple1.png">
+            <img src="arduino2.jpg">
+        </section>
+
+        <section>
+            <h2>Le Moniteur Série</h2>
+            <p>Le moniteur série est un outil intégré dans l'IDE Arduino qui permet de communiquer avec la carte Arduino via le port USB. Il permet d'envoyer et de recevoir des données entre l'Arduino et l'ordinateur. C'est pratique parce que c'est un moyen simple de recevoir ou envoyer des informations des capteurs et panneau.</p>
+            <img src="moniteur-série-donnée-affichage-réorganisé.png" alt="Moniteur Série Arduino">
+            <p>Ci-dessous se trouve un bout de code qui utilise le moniteur série afin de controler le coté de défilement d'un texte s'affichant sur un écran LCD</p>
+            <img src="exemple2.png" alt="la soeur a luke">
+            <img src="arduino3.jpg">
+        </section>
+    </div>
+    <div class="w3-bar w3-bottom">
+          
+        <a href="index.html" class="w3-bar-item w3-black w3-button">Retourner sur mon site ?</a>
+        
+    </div>
+</body>
+</html>
